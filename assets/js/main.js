@@ -8,4 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else btnSearch.textContent = "Search";
     }
+
+    var btnMenu = document.getElementById("navbarCollapse");
+    var menuItem = document.getElementById("menu-item");
+    var navBar = document.getElementById("navbar");
+    btnMenu.onclick = function(){
+        navBar.classList.toggle("show-menu-res");
+        menuItem.classList.toggle("show");
+    }
 }, false);
